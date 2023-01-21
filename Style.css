@@ -1,0 +1,285 @@
+:root {
+  --tp-color: rgb(235, 234, 235);
+  --ab-color: rgb(158, 158, 158);
+  --tb-color: rgb(81, 254, 252);
+  --hi-color: rgb(31, 30, 30);
+  --gi-color: rgb(255, 255, 255);
+  --st-color: rgb(255, 0, 0);
+  --sa-color: rgb(150, 254, 81);
+  --sb-color: rgb(0, 0, 0);
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(26, 26, 26);
+}
+.gbr {
+  position: relative;
+  width: 600px;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.gbr .iconA {
+  width: 200px;
+}
+.gbr .iconB {
+  width: 350px;
+}
+/* LudaX */
+.iconA path {
+  fill: transparent;
+  stroke-width: 30;
+  stroke: var(--sb-color);
+}
+.iconA path {
+  stroke-dasharray: 19152;
+  stroke-dashoffset: 0;
+}
+/* Sleep Knight */
+.iconB path.bg {
+  fill: transparent;
+  stroke-width: 80;
+  stroke: var(--sb-color);
+}
+.iconB path.ab,
+path.me,
+path.pu,
+path.hi {
+  fill: transparent;
+  stroke-width: 30;
+  stroke: var(--sb-color);
+}
+.iconB path.at {
+  fill: transparent;
+  stroke-width: 10;
+  stroke: var(--sb-color);
+}
+.iconB path {
+  stroke-dasharray: 51446;
+  stroke-dashoffset: 0;
+}
+/* Animasi LudaX */
+.gbr:hover path.tb {
+  animation: animate-tb 5s linear forwards;
+}
+@keyframes animate-tb {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 19152;
+    stroke: var(--sa-color);
+  }
+  80% {
+    stroke-dashoffset: 38304;
+    fill: transparent;
+    stroke: var(--st-color);
+  }
+  100% {
+    stroke-dashoffset: 38304;
+    fill: var(--tb-color);
+    stroke: var(--hi-color);
+  }
+}
+.gbr:hover path.tp {
+  animation: animate-tp 5s linear forwards;
+}
+@keyframes animate-tp {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 19152;
+    stroke: var(--sa-color);
+  }
+  80% {
+    stroke-dashoffset: 38304;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 38304;
+    fill: var(--tp-color);
+    stroke: var(--hi-color);
+  }
+}
+.gbr:hover path.hi {
+  animation: animate-hi 5s linear forwards;
+}
+@keyframes animate-hi {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 19152;
+    stroke: var(--sa-color);
+  }
+  80% {
+    stroke-dashoffset: 38304;
+    fill: transparent;
+    stroke: var(--st-color);
+  }
+  100% {
+    stroke-dashoffset: 38304;
+    fill: var(--hi-color);
+    stroke: var(--hi-color);
+  }
+}
+.gbr:hover path.gi {
+  animation: animate-gi 5s linear forwards;
+}
+@keyframes animate-gi {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 19152;
+    stroke: var(--sa-color);
+  }
+  80% {
+    stroke-dashoffset: 38304;
+    fill: transparent;
+    stroke: var(--st-color);
+  }
+  100% {
+    stroke-dashoffset: 38304;
+    fill: var(--gi-color);
+    stroke: var(--hi-color);
+  }
+}
+/* Animasi SK */
+.gbr:hover path.bg {
+  animation: animasi-bg 5s linear forwards;
+}
+@keyframes animasi-bg {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 51446;
+    stroke: var(--sa-color);
+  }
+  80% {
+    stroke-dashoffset: 102893;
+    fill: transparent;
+    stroke: var(--st-color);
+  }
+  100% {
+    stroke-dashoffset: 102893;
+    fill: var(--sb-color);
+    stroke: var(--sh-color);
+  }
+}
+.gbr:hover path.ab {
+  animation: animasi-ab 5s linear forwards;
+}
+@keyframes animasi-ab {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 51446;
+    stroke: var(--sa-color);
+  }
+  80% {
+    stroke-dashoffset: 102893;
+    fill: transparent;
+    stroke: var(--st-color);
+  }
+  100% {
+    stroke-dashoffset: 102893;
+    fill: var(--ab-color);
+    stroke: var(--sh-color);
+  }
+}
+.gbr:hover path.pu {
+  animation: animasi-pu 5s linear forwards;
+}
+@keyframes animasi-pu {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 51446;
+    stroke: var(--sa-color);
+  }
+  80% {
+    stroke-dashoffset: 102893;
+    fill: transparent;
+    stroke: var(--st-color);
+  }
+  100% {
+    stroke-dashoffset: 102893;
+    fill: var(--gi-color);
+    stroke: var(--sh-color);
+  }
+}
+.gbr:hover path.at {
+  animation: animasi-at 5s linear forwards;
+}
+@keyframes animasi-at {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 51446;
+    stroke: var(--sa-color);
+  }
+  80% {
+    stroke-dashoffset: 102893;
+    fill: transparent;
+    stroke: var(--st-color);
+  }
+  100% {
+    stroke-dashoffset: 102893;
+    fill: var(--st-color);
+    stroke: var(--sh-color);
+  }
+}
+.gbr:hover path.me {
+  animation: animasi-me 5s linear forwards;
+}
+@keyframes animasi-me {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 51446;
+    stroke: var(--sa-color);
+  }
+  80% {
+    stroke-dashoffset: 102893;
+    fill: transparent;
+    stroke: var(--st-color);
+  }
+  100% {
+    stroke-dashoffset: 102893;
+    fill: var(--st-color);
+    stroke: var(--sh-color);
+  }
+}
+.gbr:hover path.hi {
+  animation: animasi-hi 5s linear forwards;
+}
+@keyframes animasi-hi {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 51446;
+    stroke: var(--sa-color);
+  }
+  80% {
+    stroke-dashoffset: 102893;
+    fill: transparent;
+    stroke: var(--st-color);
+  }
+  100% {
+    stroke-dashoffset: 102893;
+    fill: var(--hi-color);
+    stroke: var(--sh-color);
+  }
+}
